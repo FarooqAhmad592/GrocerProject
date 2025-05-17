@@ -1,0 +1,69 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2820
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Bold;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red196\green26\blue22;
+}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c0\c85000;\csgenericrgb\c100000\c100000\c100000;\csgenericrgb\c77000\c10200\c8600;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww21240\viewh8300\viewkind0
+\deftab593
+\pard\tx593\pardeftab593\partightenfactor0
+
+\f0\b\fs24 \cf2 \cb3 Login Credentials\
+
+\f1\b0 \
+Email: \cf4 test@example.com\cf2 \
+Password: \cf4 12345678\cf2 \
+\
+This project demonstrates a modern iOS architecture with a focus on:\
+\
+- MVVM architecture\
+- Async/await\
+- UICollectionView with Compositional Layout\
+- Persistent login with secure state handling\
+- Auto-sliding banners\
+- Category-based product filtering\
+\
+
+\f0\b Login Flow
+\f1\b0 \
+\
+- Fields for \'93email\'94 and \'93password\'94\
+- Basic validations:\
+  - Valid email format (Regex-based)\
+  - Minimum password length (e.g., 8+)\
+- Displays validation errors dynamically\
+- Shows a \'93loading spinner\'94 during login\
+- Uses \'93Keychain\'94 to persist login state\
+- Navigates to \'93Home screen\'94 on success\
+- Auto-login on next app launch if already logged in\
+\
+Technologies:\
+- UIViewController\
+- MVVM: LoginViewModel handles all logic\
+- async/await for async login simulation\
+- Programmatic UI using UIKit\
+\
+
+\f0\b Home Screen
+\f1\b0 \
+\
+Sections\
+1. Banner Section (Auto Sliding)\
+2. Categories Section\
+   - 4 items per row \'d7 2 rows\
+   - Horizontally scrollable\
+   - Tapping a category filters the products\
+3. Products Section\
+   - Grid of 2 items per row\
+   - Shows product name & image\
+   - Vertical scrolling\
+\
+Architecture:\
+- MVVM using HomeViewModel and HomeViewController\
+- Dependency injection for injecting the ViewModel\
+- Auto-sliding banners using Timer\
+\
+UICollectionView Layout:\
+- Built with UICollectionViewCompositionalLayout\
+- Each section uses its own custom layout logic\
+    }
